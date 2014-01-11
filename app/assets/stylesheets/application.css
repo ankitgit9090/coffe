@@ -11,3 +11,88 @@
  *= require_self
  *= require_tree .
  */
+
+body,h1,h2,h3,h,h5,h6,p,div,ul ,li
+{margin:0;
+ padding:0;
+}
+
+
+.container
+{
+ width :1000px;
+ margin :20px auto;
+border: 1.5px solid black;
+
+border-radius :5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px; 
+
+-moz-box-shadow: 8px 8px 5px #888;
+-webkit-box-shadow: 8px 8px 5px #888;
+box-shadow: 8px 8px 5px #888;
+}
+
+body
+{ background:#FFFFFF
+ }
+
+
+header {padding-top:10px;
+        text-align:center;}
+
+header img {padding :1em;
+            background:#ffffff;
+             border-bottom:1px solid #666666}
+
+section{
+   margin-top :1em;
+   font-size :120%;
+   padding:20px;
+   background:#ffffff;
+}
+#logo
+{
+ padding: 4px 0px;
+ text-align: center;
+;
+ }
+.menu {
+    width: 1000px;
+    height: 30px;
+    font-size: 10px;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: center;
+    background-color:#fff;
+
+    }
+
+.menu ul {
+      height: auto;
+    padding: 2px 0px;
+    margin: 0px auto;
+}
+
+.menu li { 
+display: inline; 
+padding: 2px; 
+
+}
+.menu a {
+    text-decoration: none;
+    color: #7F7C7C;
+    padding: 2px 4px 2px 2px;
+    text-align:center;
+    font-size:16px;
+
+}
+
+.menu a:hover {
+    color: #F90;
+    background-color: #fff;
+    text-decoration:underline;
+ }
+
+
+

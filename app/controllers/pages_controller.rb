@@ -20,6 +20,7 @@ class PagesController < ApplicationController
   end
 
   def cusine
+   @title="Cusine"
   end
 
   def activites

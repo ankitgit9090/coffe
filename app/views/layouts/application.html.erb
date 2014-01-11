@@ -8,8 +8,38 @@
 
 </head>
 <body>
+<div class="container">
+  <header>
+    <div id=logo>
+    <%= link_to image_tag("logo.jpg",:alt=>"logo",:size =>"900x75") ,root_path %>
+    </div>
+   
+    <nav class="menu">
+    <ul>
+      <li class="current"><%= link_to"Home",root_path %></li>
+      <li><%= link_to"Our vision",vision_path%></li>
+      <li><%= link_to"Our trail",trail_path%></li>
+      <li><%= link_to"Transportation",transport_path%></li>
+      <li><%= link_to"Accommodation",accommodation_path%></li>
+      <li><%= link_to"Cuisine ",cusine_path%></li>
+      <li><%= link_to"Excursions & Activities",activities_path%></li>
+      <li><%= link_to"Rates",rates_path%></li>
+      <li><%= link_to"Reserve",reserve_path%></li>
+      <li><%= link_to"Contact us",contact_path%></li>
+    </ul>
+   </nav>
 
-<%= yield %>
+ </header>
 
+
+ <section class="round">
+ <%= yield %>
+</section>
+
+<footer>
+ 
+
+</footer>
+ </div>
 </body>
 </html>
