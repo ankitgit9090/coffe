@@ -1,4 +1,36 @@
 Coffe::Application.routes.draw do
+  
+
+
+
+
+root :to=>"pages#home"
+
+
+match '/home',:to=>'pages#home' , via: 'get'
+match '/vision',:to=>'pages#vision',via: 'get'
+match '/trail',:to=>'pages#trail',via: 'get'
+match '/transport',:to=>'pages#transport',via: 'get'
+match '/accommodation',:to=>'pages#accommodation',via: 'get'
+match '/cusine',:to=>'pages#cusine',via: 'get'
+match '/activities',:to=>'pages#activites',via: 'get'
+match '/rates',:to=>'pages#rates',via: 'get'
+match '/reserve',:to=>'pages#reserve',via: 'get'
+match '/contact',:to=>'pages#contact',via: 'get'
+
+
+
+
+  get "pages/home"
+  get "pages/vision"
+  get "pages/trail"
+  get "pages/transport"
+  get "pages/accommodation"
+  get "pages/cusine"
+  get "pages/activites"
+  get "pages/reserve"
+  get "pages/rates"
+  get "pages/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
