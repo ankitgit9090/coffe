@@ -1,17 +1,37 @@
-<div id="featured"> 
-    <%= image_tag("vision/Picture6.jpg",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("vision/Picture1.jpg",:alt=>"Overflow: Hidden No More")%>
-    <%= image_tag("vision/Picture7.jpg",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("vision/Picture5.jpg",:alt=>"Overflow: Hidden No More") %>
-</div>
 
-<div id="">
-    <%= image_tag("vision/Picture4.jpg",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("vision/Picture8.jpg",:alt=>"Overflow: Hidden No More")%>
+ <%=stylesheet_link_tag "bjqs.css" %>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
+<%=stylesheet_link_tag "vision.css" %>
 
-</div>
 
-<p> Our luxury holiday trails have been conceptualized after giving importance to all the requisites which goes to make a holiday. We work out the destinations, accommodation, cuisine, activities, transportation and hospitality to minute details and the finest luxury on offer. Our trails begin from the place of your accommodation/departure in Bengaluru and end at this beginning point. Each individual is different. We allow you the flexibility of designing your trail activities to suit your preferences or we can assist you in this selection.
+<div id="banner-fade">
+    <ul class="bjqs">
+  <li><%= image_tag("vision/Picture6.jpg",:alt=>"Overflow: Hidden No More") %></li>
+  <li><%= image_tag("vision/Picture1.jpg",:alt=>"Overflow: Hidden No More")%></li>
+  <li><%= image_tag("vision/Picture7.jpg",:alt=>"Overflow: Hidden No More") %></li>
+  <li><%= image_tag("vision/Picture5.jpg",:alt=>"Overflow: Hidden No More") %></li>
+ </ul>
+
+ 
+ <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 450,
+            width       : 900,
+            responsive  : true
+          });
+
+        });
+      </script>
+  </div>    
+
+
+<div id="bottom1"><%= image_tag("vision/Picture4.jpg",:size=>"250x250",:alt=>"Overflow: Hidden No More") %></div>
+<div id="bottom2"><%= image_tag("vision/Picture8.jpg",:size=>"250x250",:alt=>"Overflow: Hidden No More")%> </div>
+
+
+<p id ="text">Our luxury holiday trails have been conceptualized after giving importance to all the requisites which goes to make a holiday. We work out the destinations, accommodation, cuisine, activities, transportation and hospitality to minute details and the finest luxury on offer. Our trails begin from the place of your accommodation/departure in Bengaluru and end at this beginning point. Each individual is different. We allow you the flexibility of designing your trail activities to suit your preferences or we can assist you in this selection.
 </p>
 
 <p> Our trails are designed to give you the feel and experience of the destination. The spirit, the culture, the way of life and the highlights of the geographical location and its activities. From picnic lunches with wine to the finest liquor and candle light dinners under the stars, you will be pampered with fine quality and service in hospitality while on trail with us.
@@ -20,3 +40,5 @@
 
 <p>The luxury trail will help you escape, relax, explore, indulge, learn and rejuvenate. The trails are designed to enthrall the romantic, adventurous & the sophisticated. So, do come along. All you need to bring is your boots and clothes to suit the weather of the day. The rest – from the time you arise in the morning till retiring at night - is all attended to.  
  </p>
+
+

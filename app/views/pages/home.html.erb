@@ -1,16 +1,43 @@
 <%=stylesheet_link_tag 'pages.css.scss'%>
 
-<div id="featured"> 
-    <%= image_tag("home/image 1.jpg",:size => "800x450",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("home/image 2.jpg",:size => "800x450",:alt=>"Overflow: Hidden No More")%>
-    <%= image_tag("home/image 3.jpg",:size => "800x450",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("home/image 4.jpg",:size => "800x450",:alt=>"Overflow: Hidden No More") %>
-</div>
+<link href="home.css" rel="stylesheet" type="text/css" />
 
-<p>The  Western Ghats mountain ranges running along western part of  the Indian peninsula  are UNESCO’s World Heritage Site and is considered one of the eight biological hotspots of the world.
+ <%=stylesheet_link_tag "bjqs.css" %>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
+
+
+   <div id="banner-fade">
+    <ul class="bjqs">
+            
+            
+        <li><%= image_tag("home/image 1.jpg",:size => "1000x500",:alt=>"Coffe,Tea & U") %></li>
+        <li><%= image_tag("home/Picture1.jpg",:size => "1000x450",:alt=>"Coffe,Tea & U")%></li>
+        <li><%= image_tag("home/image 3.jpg",:size => "1000x450",:alt=>"Coffe,Tea & MI") %></li>
+        <li><%= image_tag("home/image 4.jpg",:size => "1000x450",:alt=>"Coffe,Tea & Me") %></li>
+        </ul>
+       
+
+        <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 450,
+            width       : 900,
+            responsive  : true
+          });
+
+        });
+      </script>
+    </div>
+
+ <div id="abc">
+<p id ="ab">The  Western Ghats mountain ranges running along western part of  the Indian peninsula  are UNESCO’s World Heritage Site and is considered one of the eight biological hotspots of the world.
 </p>
-
-
-<p><%= image_tag("home/image 12.jpg",:alt=>"Overflow: Hidden No More",:size =>"450x200") %>
-   <%= image_tag("home/image 13.png",:alt=>"Overflow: Hidden No More",:size =>"450x200") %> </p>
+</div>
+<div class ="homebottomimage" >
+    
+  <%= image_tag("home/image 12.jpg",:alt=>"Overflow: Hidden No More",:size =>"350x200") %>
+  <%= image_tag("home/image 13.png",:alt=>"Overflow: Hidden No More",:size =>"350x200") %>
+ 
+</div>
 

@@ -1,15 +1,33 @@
-<div>
+ <%=stylesheet_link_tag "bjqs.css" %>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
 
-    <%= image_tag("transport/Picture9.jpg",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("transport/Picture10.jpg",:alt=>"Overflow: Hidden No More")%>
-   
 
-</div>
+   <div id="banner-fade">
+    <ul class="bjqs">
+            
+            
+        <li><%= image_tag("transport/Picture9.jpg",:size => "1000x500",:alt=>"Coffe,Tea & U") %></li>
+        <li><%= image_tag("transport/Picture11.jpg",:size => "1000x450",:alt=>"Coffe,Tea & U")%></li>
+        <
+        </ul>
+       
+
+        <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 450,
+            width       : 900,
+            responsive  : true
+          });
+
+        });
+      </script>
+    </div>
+
 <p>An early 6:00am welcome greeting by our chauffeur in a Toyota Innova on Day 1 at your accommodation in Bengaluru. A comfortable ride will transport you to your home for the next four nights at Coorg in six hours. This vehicle will be at your service for the entire duration of the trail. The vehicle be stocked with juices and savouries. It will transport you to all your desired excursions & activities in the trail and drive you back to Bengaluru to your accommodation at the end of the trail, on the evening of Day 5.. <p>
 
-<div>
-    <%= image_tag("transport/Picture11.png",:alt=>"Overflow: Hidden No More") %>
-    <%= image_tag("transport/Picture12.jpg",:alt=>"Overflow: Hidden No More") %>
+<div float:right;>
     <%= image_tag("transport/Picture13.png",:alt=>"Overflow: Hidden No More") %>
 </div>
 
